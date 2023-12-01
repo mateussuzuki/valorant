@@ -1,0 +1,21 @@
+* {
+  color: white;
+}
+
+.navbar {
+  background-color: var(--black);
+}
+
+.nav-link:hover, 
+.navbar-brand:hover {
+  color: var(--red);
+}
+
+.dropdown-menu {
+  transform: translate(-40px, 180px);
+  background-color: var(--white);
+}
+
+.dropdown:hover>.dropdown-menu {
+  display: block;
+}

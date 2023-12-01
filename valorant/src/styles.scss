@@ -1,1 +1,16 @@
-/* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: valorantFont;
+  src: url('assets/font/Valorant\ Font.ttf');
+}
+
+* {
+  font-family: valorantFont;
+}
+
+:root {
+  --black: #000;
+  --white: #FFFBF5;
+  --darkRed: #53212B;
+  --lightRed:#FD4556;
+  --red: #BD3944;
+}
