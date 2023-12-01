@@ -11,11 +11,18 @@
   color: var(--red);
 }
 
+.dropdown-item:hover {
+  color: var(--red);
+  background-color: var(--black);
+}
+
 .dropdown-menu {
-  transform: translate(-40px, 180px);
-  background-color: var(--white);
+  top: 100%;
+  right: -80%;
 }
 
 .dropdown:hover>.dropdown-menu {
   display: block;
+  background-color: var(--black);
+
 }
