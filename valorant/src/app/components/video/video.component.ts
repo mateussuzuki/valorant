@@ -29,7 +29,7 @@ export class VideoComponent implements OnInit{
         this.pass = 0
       }
       this.playNextGif()
-    }, 6000)
+    }, 5500)
   }
 
   }
