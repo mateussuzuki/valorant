@@ -3,7 +3,9 @@
 <div class="bg">
   <div class="container">  
     <h1>Agents:</h1>
-    
+    <div *ngFor="let agent of agents">
+      {{ agent.displayName }}
+    </div>
   </div>
 </div>
 
