@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http'
 import { AgentService } from '../services/agent.service';
-
+import { Agent } from 'src/app/models/agents.model';
 @Component({
   selector: 'app-main-screen',
   templateUrl: './main-screen.component.html',
@@ -9,7 +9,7 @@ import { AgentService } from '../services/agent.service';
 })
 export class MainScreenComponent implements OnInit {
 
-  agents:Array<any> = []
+  agents:Agent | null = null 
 
   constructor(
     private agentService: AgentService
@@ -20,7 +20,10 @@ export class MainScreenComponent implements OnInit {
 
   ngOnInit(): void {
     this.agentService.getAgents().subscribe((response:any) => {
-      this.agents = response.data
+      
+      const numberRandom:number = Math.floor(Math.random() * (response.data.length))
+      this.agents = response.data[numberRandom]
+      console.log(this.agents);
     })
   }
 

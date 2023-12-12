@@ -14,4 +14,6 @@ export class AgentService {
   getAgents() {
     return this.http.get(this.apiUrl);
   }
+
+  
 }
