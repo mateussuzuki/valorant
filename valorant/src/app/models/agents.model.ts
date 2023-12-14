@@ -2,6 +2,8 @@ export interface Agent {
   displayName:string
   displayIcon:string  
   description:string
+  bustPortrait:string
+  background:string
   role:Role
   abilities:Abilitie[]
 }

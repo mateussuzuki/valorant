@@ -1,8 +1,23 @@
 .bg {
-  background-color: var(--white);
+  background-color: var(--black);
 }
 
 h1 {
   font-size: 6em;
   color: var(--lightRed);
+}
+
+h3, h4 {
+  color: var(--white);
+}
+
+.bustPortrait {
+  width: 570px;
+  position: relative;
+  
+}
+
+.backgroundBustPortrait {
+  width: 360px;
+  position: absolute;
 }

@@ -10,20 +10,24 @@ import { Agent } from 'src/app/models/agents.model';
 export class MainScreenComponent implements OnInit {
 
   agents:Agent | null = null 
+  agentsImgMain:Agent | null = null
 
   constructor(
     private agentService: AgentService
     ) {
   }
-
+  
 
 
   ngOnInit(): void {
     this.agentService.getAgents().subscribe((response:any) => {
       
-      const numberRandom:number = Math.floor(Math.random() * (response.data.length))
-      this.agents = response.data[numberRandom]
-      console.log(this.agents);
+      let numberRandom:number = Math.floor(Math.random() * (response.data.length))
+      if(numberRandom == 9) {
+        numberRandom = Math.floor(Math.random() * (response.data.length))
+      }
+      this.agentsImgMain = response.data[numberRandom]
+      console.log(this.agentsImgMain);
     })
   }
 
