@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { HttpClient } from '@angular/common/http'
 import { AgentService } from '../services/agent.service';
 import { Agent } from 'src/app/models/agents.model';
+
 @Component({
   selector: 'app-main-screen',
   templateUrl: './main-screen.component.html',
@@ -17,19 +17,31 @@ export class MainScreenComponent implements OnInit {
     ) {
   }
   
-
-
   ngOnInit(): void {
     this.agentService.getAgents().subscribe((response:any) => {
-      
       let numberRandom:number = Math.floor(Math.random() * (response.data.length))
+      while (numberRandom == 9) {
+          numberRandom = Math.floor(Math.random() * (response.data.length))
+      }
+      this.agentsImgMain = response.data[numberRandom]
+      console.log(this.agentsImgMain);
+    })
+    this.carouselImgAgents()
+}
+
+carouselImgAgents(): void {
+  setTimeout(() => {
+    this.agentService.getAgents().subscribe((response:any) => {
+      let numberRandom:number = Math.floor(Math.random() * (response.data.length))
+      console.log(numberRandom);
+      
       if(numberRandom == 9) {
         numberRandom = Math.floor(Math.random() * (response.data.length))
       }
       this.agentsImgMain = response.data[numberRandom]
       console.log(this.agentsImgMain);
+      this.carouselImgAgents()
     })
-  }
-
-
+  }, 5000);
+}
 }
