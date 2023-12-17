@@ -31,9 +31,8 @@ export class MainScreenComponent implements OnInit {
   ngOnInit(): void {
     this.carouselImgAgents()
   }
-
-  switchImg(): Promise<any> {
-    return new Promise((resolve) => {
+  
+  switchImg() {
       this.agentService.getAgents().subscribe((response:any) => {
         let numberRandom:number = Math.floor(Math.random() * (response.data.length))
         console.log(numberRandom);
@@ -42,32 +41,30 @@ export class MainScreenComponent implements OnInit {
         }
         this.agentsImgMain = response.data[numberRandom]
         console.log(this.agentsImgMain);
-      })    
-      setTimeout(() => {
-
-        resolve("")
-      }, 1600)
-    })
+      })   
     
   }
 
   switchAnimation() {
-    
     this.imgFade = this.imgFade === "in" ? "out": "in"
   }
 
-  carouselImgAgents(): void {
-    this.switchImg().then(() => {
-      setTimeout(()=> {
-        this.switchAnimation()
-        setTimeout(()=> {
-          this.switchAnimation()
-          this.carouselImgAgents()
-        }, 600)
-      }, 600)
-    })
-    
-  
+  async carouselImgAgents(): Promise<void> {
+
+    await this.switchImg()
+    await this.delay(2500)
+    await this.switchAnimation()
+    await this.delay(1000)
+    await this.switchAnimation()
+    await this.carouselImgAgents()
+
   }
+
+  delay(ms: number): Promise<void> {
+    return new Promise(resolve => setTimeout(resolve, ms))
+  }
+
+
+
 }
 
