@@ -8,6 +8,7 @@ import { VideoComponent } from './components/video/video.component';
 import { MainScreenComponent } from './components/main-screen/main-screen.component';
 import { HttpClientModule } from '@angular/common/http';
 import { AgentService } from './components/services/agent.service';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,7 @@ import { AgentService } from './components/services/agent.service';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    
+    BrowserAnimationsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
