@@ -9,13 +9,15 @@ import { MainScreenComponent } from './components/main-screen/main-screen.compon
 import { HttpClientModule } from '@angular/common/http';
 import { AgentService } from './components/services/agent.service';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AgentsMainScreenComponent } from './components/agents-main-screen/agents-main-screen.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     VideoComponent,
-    MainScreenComponent
+    MainScreenComponent,
+    AgentsMainScreenComponent
   ],
   imports: [
     BrowserModule,
