@@ -17,7 +17,6 @@ import { __values } from 'tslib';
   ]
 })
 export class AgentsMainScreenComponent implements OnInit {
-  agents: Agent | null = null
   agentsImgMain: Agent | null = null
   imgFade: string = "in"
 
@@ -31,7 +30,8 @@ export class AgentsMainScreenComponent implements OnInit {
   }
 
   switchImg() {
-    this.agentService.getAgents().subscribe((response: any) => {
+    this.agentService.getAgents()
+    .subscribe((response: any) => {
       let numberRandom: number = Math.floor(Math.random() * (response.data.length))
       console.log(numberRandom);
       if (numberRandom == 9) {
