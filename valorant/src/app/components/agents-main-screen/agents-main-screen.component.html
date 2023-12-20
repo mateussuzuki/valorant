@@ -1,6 +1,6 @@
 <div class="bg">
   <div class="container">  
-    <div *ngIf="agentsImgMain" class="row"> 
+    <div *ngIf="agentsImg" class="row"> 
       <div class="col-12 col-md-6 mt-5">
         <h1>Agents:</h1>
         <h3>CREATIVITY IS YOUR GREATEST WEAPON</h3>
@@ -10,9 +10,9 @@
           <button class="btn">See The Agents</button>
         </div>
       </div>
-      <div *ngIf="agentsImgMain" [@fadeInOut]="imgFade" class="col-12 col-md-6 d-flex justify-content-end">
-        <img [src]="agentsImgMain.background" alt="background agent" class="backgroundBustPortrait">
-        <img [src]="agentsImgMain.bustPortrait" alt="image agent" class="bustPortrait">
+      <div *ngIf="agentsImg" [@fadeInOut]="imgFade" class="col-12 col-md-6 d-flex justify-content-end">
+        <img [src]="agentsImg.background" alt="background agent" class="backgroundBustPortrait">
+        <img [src]="agentsImg.bustPortrait" alt="image agent" class="bustPortrait">
       </div>
       
     </div>

@@ -5,6 +5,7 @@ import { trigger, state, style, transition, animate, keyframes } from '@angular/
 import { __values } from 'tslib';
 
 @Component({
+  
   selector: 'app-agents-main-screen',
   templateUrl: './agents-main-screen.component.html',
   styleUrls: ['./agents-main-screen.component.scss'],
@@ -17,7 +18,7 @@ import { __values } from 'tslib';
   ]
 })
 export class AgentsMainScreenComponent implements OnInit {
-  agentsImgMain: Agent | null = null
+  agentsImg: Agent | null = null
   imgFade: string = "in"
 
   constructor(
@@ -37,8 +38,8 @@ export class AgentsMainScreenComponent implements OnInit {
       if (numberRandom == 9) {
         numberRandom = Math.floor(Math.random() * (response.data.length))
       }
-      this.agentsImgMain = response.data[numberRandom]
-      console.log(this.agentsImgMain);
+      this.agentsImg = response.data[numberRandom]
+      console.log(this.agentsImg);
     })
 
   }
