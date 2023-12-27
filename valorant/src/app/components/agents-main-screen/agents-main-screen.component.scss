@@ -1,16 +1,25 @@
 h1 {
   font-size: 6em;
   color: var(--lightRed);
-  text-indent: 0.3em;
+  letter-spacing: -5px;
 }
 
 h3, h4 {
   color: var(--white);
+  line-height: 1.4em;
+  font-family: Tungsten-Bold,arial,georgia,sans-serif;
+}
+
+.borderDecoration {
+  border-left: 1px solid var(--white);
+  padding-left: 4%;
+
 }
 
 .bustPortrait {
   width: 570px;
   position: relative;
+
 }
 
 .backgroundBustPortrait {

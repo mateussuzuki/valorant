@@ -13,7 +13,7 @@ import { __values } from 'tslib';
     trigger('fadeInOut', [
       state('in', style({ opacity: 1 })),
       state('out', style({opacity: 0})),
-      transition("in<=>out", animate('0.6s'))
+      transition("in<=>out", animate('1s'))
     ])
   ]
 })
@@ -53,7 +53,7 @@ export class AgentsMainScreenComponent implements OnInit {
     await this.switchImg()
     await this.delay(2500)
     await this.switchAnimation()
-    await this.delay(1000)
+    await this.delay(1500)
     await this.switchAnimation()
     await this.carouselImgAgents()
 
