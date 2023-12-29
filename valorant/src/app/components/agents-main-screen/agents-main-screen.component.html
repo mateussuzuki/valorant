@@ -1,8 +1,8 @@
 <div class="bg">
   <div class="container">  
     <div *ngIf="agentsImg" class="row"> 
-      <div class="col-12 col-md-5 mt-5 mb-5 borderDecoration">
-          <h1>AGENTS</h1>
+      <div class="col-12 col-md-4 mt-5 mb-5 d-flex flex-column justify-content-center borderDecoration">
+        <h1>AGENTS</h1>
         <!-- <h3 class="fs-2">CREATIVITY IS YOUR GREATEST WEAPON</h3> -->
         <h4 class="mb-5 mt-2">More than guns and bullets, you’ll choose an Agent armed with adaptive, swift, and lethal abilities that create opportunities to let your gunplay shine. No two Agents play alike, just as no two highlight reels will look the same.
         </h4>
@@ -10,7 +10,7 @@
           <button class="btn px-5 py-2">See The Agents</button>
         </div>
       </div>
-      <div *ngIf="agentsImg" [@fadeInOut]="imgFade" class="col-12 col-md-7 d-flex justify-content-end ">
+      <div *ngIf="agentsImg" [@fadeInOut]="imgFade" class="col-12 col-md-8 d-flex justify-content-end">
         <img [src]="agentsImg.background" alt="background agent" class="backgroundBustPortrait">
         <img [src]="agentsImg.bustPortrait" alt="image agent" class="bustPortrait">
       </div>
