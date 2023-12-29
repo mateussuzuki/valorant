@@ -2,6 +2,10 @@
   background-color: var(--black);
 }
 
+.container {
+  min-height: 100vh;
+}
+
 .writtenPart {
   border-left: 1px solid var(--white);
   padding-left: 10%;

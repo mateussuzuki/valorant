@@ -1,9 +1,23 @@
 .imgMap {
+  max-height: 90vh;
   width: 100%;
+  -webkit-mask-image: linear-gradient(to left, transparent 20%, var(--white) 90%);
+  position: absolute;
+  left: 0;
+} 
+
+.writtenPart {
+  min-height: 90vh;
+  z-index: 1;
 }
 
-h1 {
-  font-size: 5.5em;
+.bg {
+  background-color: var(--white);
+}
+
+h3,
+h4 {
+  color: var(--black);
 }
 
 .btn {
