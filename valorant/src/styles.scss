@@ -21,6 +21,14 @@ h4 {
   font-family: Tungsten-Bold, arial, georgia, sans-serif;
 }
 
+.btn {
+  font-size: 1.3em;
+  position: relative;
+  border: 2px solid var(--darkRed);
+  color: var(--black);
+}
+
+
 :root {
   --black: #000;
   --white: #FFFBF5;
