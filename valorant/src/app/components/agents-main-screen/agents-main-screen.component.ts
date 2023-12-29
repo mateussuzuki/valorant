@@ -35,10 +35,11 @@ export class AgentsMainScreenComponent implements OnInit {
     .subscribe((response: any) => {
       let numberRandom: number = Math.floor(Math.random() * (response.data.length))
       console.log(numberRandom);
-      if (numberRandom == 9) {
+      if (numberRandom !== 9) {
+        this.agentsImg = response.data[numberRandom]
+      } else {
         numberRandom = Math.floor(Math.random() * (response.data.length))
       }
-      this.agentsImg = response.data[numberRandom]
       console.log(this.agentsImg);
     })
 

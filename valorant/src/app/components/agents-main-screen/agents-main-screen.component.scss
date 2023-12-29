@@ -4,27 +4,30 @@ h1 {
   letter-spacing: -5px;
 }
 
-h3, h4 {
+h3,
+h4 {
   color: var(--white);
   line-height: 1.4em;
-  font-family: Tungsten-Bold,arial,georgia,sans-serif;
+  font-family: Tungsten-Bold, arial, georgia, sans-serif;
 }
 
-.borderDecoration {
+.writtenPart {
   border-left: 1px solid var(--white);
-  padding-left: 4%;
-
+  padding-left: 10%;
+  z-index: 1;
 }
 
 .bustPortrait {
   width: 1000px;
   position: relative;
 
+
 }
 
 .backgroundBustPortrait {
   width: 600px;
   position: absolute;
+
 }
 
 .btn {
