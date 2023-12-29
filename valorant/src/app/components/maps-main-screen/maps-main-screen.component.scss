@@ -11,6 +11,11 @@
   z-index: 1;
 }
 
+.line {
+  border-right: 1px solid var(--lightRed);
+  padding-right: 10%;
+}
+
 .bg {
   background-color: var(--white);
 }
