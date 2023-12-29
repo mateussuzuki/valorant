@@ -18,7 +18,7 @@ import { __values } from 'tslib';
   ]
 })
 export class AgentsMainScreenComponent implements OnInit {
-  agentsImg: Agent | null = null
+  agentsImg!:Agent
   imgFade: string = "in"
 
   constructor(

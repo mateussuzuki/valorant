@@ -7,15 +7,14 @@ import { Maps } from 'src/app/models/maps.model';
   templateUrl: './maps-main-screen.component.html',
   styleUrls: ['./maps-main-screen.component.scss']
 })
-export class MapsMainScreenComponent implements OnInit{
+export class MapsMainScreenComponent implements OnInit {
 
-  mapsImg:Maps | null = null
+  mapsImg!: Maps;
 
-  constructor(private agentService:AgentService)
-   {
+  constructor(private agentService: AgentService) {
   }
 
-  
+
   ngOnInit(): void {
     this.getMaps()
   }
@@ -23,12 +22,12 @@ export class MapsMainScreenComponent implements OnInit{
 
   getMaps() {
     this.agentService.getMaps()
-    .subscribe((response:any) => {
-      console.log(response);
-      let numberRandom: number = Math.floor(Math.random() * (response.data.length))
-      this.mapsImg = response.data[numberRandom]
-      console.log(this.mapsImg);
-    })
+      .subscribe((response: any) => {
+        console.log(response);
+        let numberRandom: number = Math.floor(Math.random() * (response.data.length))
+        this.mapsImg = response.data[numberRandom]
+        console.log(this.mapsImg);
+      })
   }
 
 }
