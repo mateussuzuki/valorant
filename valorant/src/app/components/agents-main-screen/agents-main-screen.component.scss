@@ -25,7 +25,21 @@
 
 }
 
-// .btn {
-//   background-color: var(--white);
-//   font-size: 1.3em;
-// }
+.borderButton {
+  background: linear-gradient(to top, 
+  var(--white) 20%,
+  transparent 20%,
+  transparent 80%,
+  var(--white) 80%);
+  box-sizing: border-box
+}
+
+.button {
+  border: 1px solid var(--black);
+  &:before {
+    background-color: var(--white);
+  }
+  &:hover {
+    color: var(--black);
+  }
+}
