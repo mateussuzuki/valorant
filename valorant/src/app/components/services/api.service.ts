@@ -6,16 +6,22 @@ import { environment } from 'src/environments/environment';
   providedIn: 'root'
 })
 
-export class AgentService {
+export class ApiService {
   private apiUrlAgents = environment.apiUrlAgents;
   private apiUrlMaps = environment.apiUrlMaps;
+  private apiUrlGunsCollection = environment.apiUrlGunsCollection
   constructor(private http: HttpClient) { }
 
   getAgents() {
     return this.http.get(this.apiUrlAgents);
   }
+
   getMaps() {
     return this.http.get(this.apiUrlMaps)
+  } 
+
+  getGunsCollection() {
+    return this.http.get(this.apiUrlGunsCollection)
   }
 
   

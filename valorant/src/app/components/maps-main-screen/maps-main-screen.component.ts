@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { AgentService } from '../services/agent.service';
+import { ApiService } from '../services/api.service';
 import { Maps } from 'src/app/models/maps.model';
 
 @Component({
@@ -11,7 +11,7 @@ export class MapsMainScreenComponent implements OnInit {
 
   mapsImg!: Maps;
 
-  constructor(private agentService: AgentService) {
+  constructor(private mapsService: ApiService) {
   }
 
 
@@ -21,7 +21,7 @@ export class MapsMainScreenComponent implements OnInit {
 
 
   getMaps() {
-    this.agentService.getMaps()
+    this.mapsService.getMaps()
       .subscribe((response: any) => {
         console.log(response);
         let numberRandom: number = Math.floor(Math.random() * (response.data.length))

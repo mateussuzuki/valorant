@@ -1,0 +1,26 @@
+.imgGunCollection {
+  max-height: 100vh;
+  width: 100%;
+  -webkit-mask-image: linear-gradient(to right, transparent 30%, var(--white) 90%);
+  position: absolute;
+  left: 0;
+} 
+
+.writtenPart {
+  min-height: 100vh;
+  z-index: 1;
+}
+
+.line {
+  border-left: 1px solid var(--lightRed);
+  padding-left: 10%;
+}
+
+.bg {
+  background-color: var(--white);
+}
+
+h3,
+h4 {
+  color: var(--white);
+}

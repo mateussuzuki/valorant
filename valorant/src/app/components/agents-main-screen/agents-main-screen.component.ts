@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { AgentService } from '../services/agent.service';
+import { ApiService } from '../services/api.service';
 import { Agent } from 'src/app/models/agents.model';
 import { trigger, state, style, transition, animate, keyframes } from '@angular/animations';
 import { __values } from 'tslib';
@@ -22,7 +22,7 @@ export class AgentsMainScreenComponent implements OnInit {
   imgFade: string = "in"
 
   constructor(
-    private agentService: AgentService
+    private agentService: ApiService
   ) {
   }
 

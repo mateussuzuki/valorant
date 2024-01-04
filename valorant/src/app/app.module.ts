@@ -10,6 +10,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AgentsMainScreenComponent } from './components/agents-main-screen/agents-main-screen.component';
 import { MapsMainScreenComponent } from './components/maps-main-screen/maps-main-screen.component';
+import { GunsMainScreenComponent } from './components/guns-main-screen/guns-main-screen.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { MapsMainScreenComponent } from './components/maps-main-screen/maps-main
     VideoComponent,
     MainScreenComponent,
     AgentsMainScreenComponent,
-    MapsMainScreenComponent
+    MapsMainScreenComponent,
+    GunsMainScreenComponent
   ],
   imports: [
     BrowserModule,
