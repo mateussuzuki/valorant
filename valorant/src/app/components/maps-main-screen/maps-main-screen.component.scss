@@ -1,5 +1,5 @@
 .imgMap {
-  max-height: 100vh;
+  height: 100vh;
   width: 100%;
   -webkit-mask-image: linear-gradient(to left, transparent 20%, var(--white) 90%);
   position: absolute;
@@ -7,7 +7,7 @@
 } 
 
 .writtenPart {
-  min-height: 100vh;
+  height: 100vh;
   z-index: 1;
 }
 
