@@ -1,7 +1,8 @@
 .imgGunCollection {
   height: 100vh;
   width: 100%;
-  -webkit-mask-image: linear-gradient(to right, transparent 30%, var(--white) 90%);
+  mask-image: linear-gradient(to right, transparent 30%, var(--white) 90%);
+  
   position: absolute;
   left: 0;
 } 
@@ -23,4 +24,22 @@
 h3,
 h4 {
   color: var(--white);
+}
+
+.borderButton {
+  background: linear-gradient(to top, 
+  var(--white) 20%,
+  transparent 20%,
+  transparent 80%,
+  var(--white) 80%);
+}
+
+.button {
+  border: 2px solid var(--black);
+  &:before {
+    background-color: var(--white);
+  }
+  &:hover {
+    color: var(--black);
+  }
 }
