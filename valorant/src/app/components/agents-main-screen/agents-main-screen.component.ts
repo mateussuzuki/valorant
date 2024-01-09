@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ApiService } from '../services/api.service';
+import { ApiService } from '../../services/api.service';
 import { Agent } from 'src/app/models/agents.model';
 import { trigger, state, style, transition, animate, keyframes } from '@angular/animations';
 import { __values } from 'tslib';
