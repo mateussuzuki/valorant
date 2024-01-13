@@ -14,6 +14,7 @@ import { GunsMainScreenComponent } from './components/guns-main-screen/guns-main
 import { AgentsInfoScreenComponent } from './components/agents-info-screen/agents-info-screen.component';
 import { ImgAgentsInfoScreenComponent } from './components/img-agents-info-screen/img-agents-info-screen.component';
 import { IconAgentsInfoScreenComponent } from './components/icon-agents-info-screen/icon-agents-info-screen.component';
+import { AbilitiesAgentsInfoScreenComponent } from './components/abilities-agents-info-screen/abilities-agents-info-screen.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { IconAgentsInfoScreenComponent } from './components/icon-agents-info-scr
     GunsMainScreenComponent,
     AgentsInfoScreenComponent,
     ImgAgentsInfoScreenComponent,
-    IconAgentsInfoScreenComponent
+    IconAgentsInfoScreenComponent,
+    AbilitiesAgentsInfoScreenComponent
   ],
   imports: [
     BrowserModule,

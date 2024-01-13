@@ -1,16 +1,21 @@
 export interface Agent {
-  displayName:string
   displayIcon:string  
-  description:string
   bustPortrait:string
   background:string
-  role:Role
-  abilities:Abilitie[]
 }
-export interface ImgAgent {
+export interface Info {
   displayIcon:string
   bustPortrait:string
   isPlayableCharacter:boolean
+  abilities:Abilitie[]
+  description:string
+  role:Role[]
+}
+
+export interface AbilitieRoleAgent {
+  abilities:Abilitie[]
+  description:string
+  role:Role[]
 }
 
 export interface Role {
@@ -24,4 +29,27 @@ export interface Abilitie {
   displayIcon:string
   displayName:string
   slot:string
+}
+
+export class AgentsInfo {
+  displayIcon:string
+  bustPortrait:string
+  isPlayableCharacter: boolean
+  abilities:Abilitie[]
+  description:string
+  role:Role[]
+  constructor(
+    _displayIcon:string = "",
+   _bustPortrait:string = "",
+    _isPlayableCharacter:boolean = true,
+    _abilities:Abilitie[] = [],
+    _description:string ="",
+    _role:Role[] = []) {
+    this.displayIcon = _displayIcon
+    this.bustPortrait = _bustPortrait
+    this.isPlayableCharacter = _isPlayableCharacter
+    this.abilities = _abilities
+    this.description = _description
+    this.role = _role
+  }
 }

@@ -18,16 +18,18 @@
                   fill="white" stroke="white" stroke-width="2" />
               </svg>
             </div>
-            <img src="{{ selectedImg.bustPortrait }}" *ngIf="selectedImg" alt="imgAgent" class="bustPortrait">
+            <div *ngIf="selectedImg">
+              <app-img-agents-info-screen [selectedImg]="selectedImg"/>
+            </div>
           </div>
-          <div class="col-auto p-1" (click)="selectImg(item)" *ngFor="let item of agentImg">
+          <div class="col-auto p-1" (click)="selectImg(item)"  *ngFor="let item of agentImg">
             <app-icon-agents-info-screen [agentImg]="item" />
           </div>
         </div>
       </div>
 
-      <div class="col-6">
-
+      <div class="col-5 d-flex justify-content-center align-items-center" *ngIf="selectedImg">
+        <app-abilities-agents-info-screen [selectedImg]="selectedImg"/>
       </div>
     </div>
   </div>

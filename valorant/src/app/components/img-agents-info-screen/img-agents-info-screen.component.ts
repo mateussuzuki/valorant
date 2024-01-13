@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { ImgAgent } from 'src/app/models/agents.model';
+import { Info } from 'src/app/models/agents.model';
 
 @Component({
   selector: 'app-img-agents-info-screen',
@@ -8,7 +8,7 @@ import { ImgAgent } from 'src/app/models/agents.model';
 })
 export class ImgAgentsInfoScreenComponent {
 
-  @Input() agentImg!: ImgAgent
+  @Input() selectedImg!: Info
 
   constructor(){
 
