@@ -7,6 +7,11 @@ export interface Agent {
   role:Role
   abilities:Abilitie[]
 }
+export interface ImgAgent {
+  displayIcon:string
+  bustPortrait:string
+  isPlayableCharacter:boolean
+}
 
 export interface Role {
   description:string
