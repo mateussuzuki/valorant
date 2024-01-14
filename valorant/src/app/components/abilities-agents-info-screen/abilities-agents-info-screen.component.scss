@@ -1,0 +1,40 @@
+.iconSkills {
+  background-color: var(--black);
+  width: 100%;
+}
+
+.buttonSkills {
+  padding: 0;
+  width: 90%;
+}
+
+.nav-item {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.buttonSkills.active {
+  border-bottom: none;
+}
+
+.tab-content {
+  display: flex;
+  justify-content: center;
+}
+
+.show {
+  border-bottom: none;
+}
+
+.tab-pane {
+  width: 28vw;
+  height: 40vh;
+}
+
+h1 {
+  font-size: 4em;
+}
+p {
+  color: var(--white);
+}

@@ -30,12 +30,12 @@ export class AgentsInfoScreenComponent implements OnInit{
         let bustPortrait: string
         let icon: string
         let isPlayableCharacter: boolean
-
+        let name:string
         let abilities: [] 
         let description: string
         let role: []
 
-        let infoAgents = new AgentsInfo()
+        let infoAgent = new AgentsInfo()
 
         this.selectedImg = response.data[23]
         this.selectedInfo = response.data[23]
@@ -43,19 +43,22 @@ export class AgentsInfoScreenComponent implements OnInit{
         bustPortrait = response.data[i].bustPortrait
         icon = response.data[i].displayIcon
         isPlayableCharacter = response.data[i].isPlayableCharacter
+        name = response.data[i].displayName
         abilities = response.data[i].abilities
         description = response.data[i].description
         role = response.data[i].role
-        infoAgents.displayIcon = icon
-        infoAgents.bustPortrait = bustPortrait
-        infoAgents.isPlayableCharacter = isPlayableCharacter
-        infoAgents.abilities = abilities
-        infoAgents.description = description
-        infoAgents.role = role
+
+        infoAgent.displayIcon = icon
+        infoAgent.bustPortrait = bustPortrait
+        infoAgent.isPlayableCharacter = isPlayableCharacter
+        infoAgent.displayName = name
+        infoAgent.abilities = abilities
+        infoAgent.description = description
+        infoAgent.role = role
+
 
         if(isPlayableCharacter == true) {
-          this.agentAllInfo.push(infoAgents)
-          
+          this.agentAllInfo.push(infoAgent)
         }
         
         console.log(this.agentAllInfo);
