@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { AbilitieRoleAgent, Info} from 'src/app/models/agents.model';
+import { Info } from 'src/app/models/agents.model';
 import { AgentsInfo } from 'src/app/models/agents.model';
 import { ApiService } from 'src/app/services/api.service';
 
@@ -11,11 +11,9 @@ import { ApiService } from 'src/app/services/api.service';
 
 export class AgentsInfoScreenComponent implements OnInit{
 
-  agentImg:Info[] = []
+  agentAllInfo:Info[] = []
   selectedImg!:Info
-
-  agentInfo:AbilitieRoleAgent[] = []
-  selectedAbilitie!:AbilitieRoleAgent
+  selectedInfo!:Info
 
   constructor (private agentsService: ApiService) {
   }
@@ -40,6 +38,7 @@ export class AgentsInfoScreenComponent implements OnInit{
         let infoAgents = new AgentsInfo()
 
         this.selectedImg = response.data[23]
+        this.selectedInfo = response.data[23]
 
         bustPortrait = response.data[i].bustPortrait
         icon = response.data[i].displayIcon
@@ -55,11 +54,11 @@ export class AgentsInfoScreenComponent implements OnInit{
         infoAgents.role = role
 
         if(isPlayableCharacter == true) {
-          this.agentImg.push(infoAgents)
+          this.agentAllInfo.push(infoAgents)
           
         }
         
-        console.log(this.agentImg);
+        console.log(this.agentAllInfo);
       }
     })
   }
@@ -68,6 +67,11 @@ export class AgentsInfoScreenComponent implements OnInit{
 
   selectImg(image:Info): void {
     this.selectedImg = image
+  }
+
+  selectInfo(info:Info): void {
+    this.selectedInfo = info
+    
   }
 
 }

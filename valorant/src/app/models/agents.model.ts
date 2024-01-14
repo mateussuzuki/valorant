@@ -12,11 +12,6 @@ export interface Info {
   role:Role[]
 }
 
-export interface AbilitieRoleAgent {
-  abilities:Abilitie[]
-  description:string
-  role:Role[]
-}
 
 export interface Role {
   description:string

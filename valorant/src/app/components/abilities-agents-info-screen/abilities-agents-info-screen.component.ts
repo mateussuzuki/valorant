@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { AbilitieRoleAgent } from 'src/app/models/agents.model';
+import { Info } from 'src/app/models/agents.model';
 
 @Component({
   selector: 'app-abilities-agents-info-screen',
@@ -7,5 +7,5 @@ import { AbilitieRoleAgent } from 'src/app/models/agents.model';
   styleUrls: ['./abilities-agents-info-screen.component.scss']
 })
 export class AbilitiesAgentsInfoScreenComponent {
-  @Input() selectedImg!:AbilitieRoleAgent
+  @Input() selectedInfo!:Info
 }
