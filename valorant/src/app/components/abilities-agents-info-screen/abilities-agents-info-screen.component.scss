@@ -27,8 +27,6 @@ ul {
 }
 
 .tab-content {
-  display: flex;
-  justify-content: center;
 }
 
 .tab-pane {
@@ -38,6 +36,10 @@ ul {
 
 .iconRole {
   width: 100%;
+}
+
+.bs {
+  border-left: 1px solid var(--white);
 }
 
 h1 {
@@ -50,5 +52,5 @@ h2 {
 }
 
 p {
-  font-size: 1.4em;
+  font-size: 1.3em;
 }

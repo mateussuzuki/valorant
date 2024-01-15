@@ -1,19 +1,23 @@
 <div class="container">
   <div class="row">
-    <div class="col-12 mb-3 text-wrap">
+    <div class="col-12 mb-3 ab">
       <h1> {{ selectedInfo.displayName }} </h1>
     </div>
   
-    <div class="col-2 mb-4">
-      <img src="{{ selectedInfo.role.displayIcon }}" alt="agentRole" class="iconRole">
-    </div>
-    <div class="col-10 d-flex align-items-center mb-4">
-      <h2 class="m-0"> {{ selectedInfo.role.displayName }} </h2>
+    <div class="col-12 bs py-2 mb-3">
+      <div class="row">
+        <div class="col-2 mb-4">
+          <img src="{{ selectedInfo.role.displayIcon }}" alt="agentRole" class="iconRole">
+        </div>
+        <div class="col-10 d-flex align-items-center mb-3">
+          <h2 class="m-0"> {{ selectedInfo.role.displayName }} </h2>
+        </div>
+        <div class="col-12">
+          <p> {{ selectedInfo.role.description }} </p>
+        </div>
+      </div>
     </div>
   
-    <div class="col-12">
-      <p> {{ selectedInfo.role.description }} </p>
-    </div>
   
     <ul class="nav nav-tabs row mb-4" id="myTab" role="tablist">
       <li class="nav-item col-3" >
