@@ -5,7 +5,6 @@
 }
 
 .buttonSkills {
-  // all:unset;
   width: 100%;
   padding: 0;
   border: 1px solid var(--white);  
@@ -33,7 +32,8 @@ ul {
 }
 
 .tab-pane {
-  height: 21vh;
+  height: 30vh;
+  max-width: 25vw;
 }
 
 .iconRole {
@@ -41,8 +41,14 @@ ul {
 }
 
 h1 {
-  font-size: 4em;
+  font-size: 100px;
 }
+
+h2 {
+  font-size: 3em;
+  color: var(--lightRed);
+}
+
 p {
-  color: var(--white);
+  font-size: 1.4em;
 }
