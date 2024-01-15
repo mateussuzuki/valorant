@@ -28,19 +28,7 @@ export class AgentsInfoScreenComponent implements OnInit{
       response.data.forEach((item:any) => {
         if(item.isPlayableCharacter == true) {
           console.log(item.role.description);
-          this.agentAllInfo.push({
-            displayName: item.displayName,
-            displayIcon: item.displayIcon,
-            bustPortrait: item.bustPortrait,
-            isPlayableCharacter: item.isPlayableCharacter,
-            abilities: item.abilities,
-            description: item.description,
-            role: {
-              description: item.role.description,
-              displayName: item.role.displayName,
-              displayIcon: item.role.displayIcon 
-            }
-          })
+          this.agentAllInfo.push(item)
         }
       });
       this.selectedImg = response.data[23]

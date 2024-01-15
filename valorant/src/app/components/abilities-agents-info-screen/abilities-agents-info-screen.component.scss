@@ -5,10 +5,11 @@
 }
 
 .buttonSkills {
-  all: unset;
-  padding: 0;
+  // all:unset;
   width: 100%;
+  padding: 0;
   border: 1px solid var(--white);  
+  border-radius: 0px;
 }
 
 .nav-item {
@@ -18,8 +19,13 @@
 
 .buttonSkills.active {
   border-bottom: none;
+  transform: translateY(0.1px);
 }
 
+
+ul {
+  --bs-nav-tabs-link-active-bg: var(--black);
+}
 
 .tab-content {
   display: flex;
