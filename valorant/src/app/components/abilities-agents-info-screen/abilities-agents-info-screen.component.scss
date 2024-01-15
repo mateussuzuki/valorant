@@ -5,8 +5,10 @@
 }
 
 .buttonSkills {
+  all: unset;
   padding: 0;
   width: 100%;
+  border: 1px solid var(--white);  
 }
 
 .nav-item {
@@ -18,13 +20,18 @@
   border-bottom: none;
 }
 
+
 .tab-content {
   display: flex;
   justify-content: center;
 }
 
 .tab-pane {
-  height: 40vh;
+  height: 21vh;
+}
+
+.iconRole {
+  width: 100%;
 }
 
 h1 {

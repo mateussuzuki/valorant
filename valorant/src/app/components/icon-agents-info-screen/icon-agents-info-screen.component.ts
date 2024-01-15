@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { Info } from 'src/app/models/agents.model';
+import { AgentsInfo } from 'src/app/models/agents.model';
 
 @Component({
   selector: 'app-icon-agents-info-screen',
@@ -8,6 +8,6 @@ import { Info } from 'src/app/models/agents.model';
 })
 export class IconAgentsInfoScreenComponent {
 
-  @Input() agentImg!: Info
+  @Input() agentImg!: AgentsInfo
 
 }

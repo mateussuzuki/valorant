@@ -23,10 +23,8 @@ export class MapsMainScreenComponent implements OnInit {
   getMaps() {
     this.mapsService.getMaps()
       .subscribe((response: any) => {
-        console.log(response);
         let numberRandom: number = Math.floor(Math.random() * (response.data.length))
         this.mapsImg = response.data[numberRandom]
-        console.log(this.mapsImg);
       })
   }
 

@@ -3,16 +3,6 @@ export interface Agent {
   bustPortrait:string
   background:string
 }
-export interface Info {
-  displayName:string
-  displayIcon:string
-  bustPortrait:string
-  isPlayableCharacter:boolean
-  abilities:Abilitie[]
-  description:string
-  role:Role[]
-}
-
 
 export interface Role {
   description:string
@@ -27,28 +17,12 @@ export interface Abilitie {
   slot:string
 }
 
-export class AgentsInfo {
+export interface AgentsInfo {
   displayName:string
   displayIcon:string
   bustPortrait:string
   isPlayableCharacter: boolean
   abilities:Abilitie[]
   description:string
-  role:Role[]
-  constructor(
-    _displayName:string = "",
-    _displayIcon:string = "",
-   _bustPortrait:string = "",
-    _isPlayableCharacter:boolean = true,
-    _abilities:Abilitie[] = [],
-    _description:string ="",
-    _role:Role[] = []) {
-    this.displayName = _displayName
-    this.displayIcon = _displayIcon
-    this.bustPortrait = _bustPortrait
-    this.isPlayableCharacter = _isPlayableCharacter
-    this.abilities = _abilities
-    this.description = _description
-    this.role = _role
-  }
+  role:Role
 }

@@ -25,10 +25,8 @@ export class GunsMainScreenComponent implements OnInit {
   getGunsCollection() {
     this.GunsCollection.getGunsCollection()
       .subscribe((response: any) => {
-        console.log(response);
         let numberRandom: number = Math.floor(Math.random() * (response.data.length))
         this.gunsCollectionImg = response.data[numberRandom]
-        console.log(this.gunsCollectionImg);
       })
   }
 }

@@ -33,14 +33,12 @@ export class AgentsMainScreenComponent implements OnInit {
   switchImg() {
     this.agentService.getAgents()
     .subscribe((response: any) => {
-      let numberRandom: number = Math.floor(Math.random() * (response.data.length))
-      console.log(numberRandom);
+      let numberRandom: number = Math.floor(Math.random() * (response.data.length));
       if (numberRandom !== 9) {
         this.agentsImg = response.data[numberRandom]
       } else {
         numberRandom = Math.floor(Math.random() * (response.data.length))
       }
-      console.log(this.agentsImg);
     })
 
   }

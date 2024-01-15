@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { Info } from 'src/app/models/agents.model';
+import { AgentsInfo } from 'src/app/models/agents.model';
 
 @Component({
   selector: 'app-abilities-agents-info-screen',
@@ -7,7 +7,7 @@ import { Info } from 'src/app/models/agents.model';
   styleUrls: ['./abilities-agents-info-screen.component.scss']
 })
 export class AbilitiesAgentsInfoScreenComponent {
-  @Input() selectedInfo!:Info
+  @Input() selectedInfo!:AgentsInfo
 
   activeTab:string = "Q"
 
