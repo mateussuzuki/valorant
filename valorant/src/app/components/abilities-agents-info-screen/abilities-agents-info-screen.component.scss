@@ -26,9 +26,6 @@ ul {
   --bs-nav-tabs-link-active-bg: var(--black);
 }
 
-.tab-content {
-}
-
 .tab-pane {
   height: 30vh;
   max-width: 25vw;
@@ -38,8 +35,9 @@ ul {
   width: 100%;
 }
 
-.bs {
+.borderLeft {
   border-left: 1px solid var(--white);
+  height: 21vh;
 }
 
 h1 {
