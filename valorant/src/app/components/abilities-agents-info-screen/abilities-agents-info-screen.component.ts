@@ -9,10 +9,5 @@ import { AgentsInfo } from 'src/app/models/agents.model';
 export class AbilitiesAgentsInfoScreenComponent {
   @Input() selectedInfo!:AgentsInfo
 
-  activeTab:string = "Q"
-
-  setActiveTab(tab: string) {
-    this.activeTab = tab
-  }
   
 }

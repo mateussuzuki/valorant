@@ -8,7 +8,12 @@
   width: 100%;
   padding: 0;
   border: 1px solid var(--white);  
-  border-radius: 0px;
+  border-radius: 4px 4px 0px 0px;
+  border-bottom: 1px solid var(--lightRed);
+}
+
+.buttonSkills:hover {
+  border-bottom: 1px solid var(--lightRed);
 }
 
 .nav-item {
@@ -17,12 +22,14 @@
 }
 
 .buttonSkills.active {
+  border: 2px solid var(--lightRed);
   border-bottom: none;
   transform: translateY(0.1px);
 }
 
 
 ul {
+  border-bottom: 1px solid var(--lightRed);
   --bs-nav-tabs-link-active-bg: var(--black);
 }
 

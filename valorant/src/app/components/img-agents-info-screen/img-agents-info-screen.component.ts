@@ -8,7 +8,7 @@ import { AgentsInfo } from 'src/app/models/agents.model';
 })
 export class ImgAgentsInfoScreenComponent {
 
-  @Input() selectedImg!: AgentsInfo
+  @Input() selectedInfo!: AgentsInfo
 
   constructor(){
 

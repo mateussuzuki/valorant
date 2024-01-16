@@ -18,18 +18,18 @@
                   fill="#FD4556" stroke="#FD4556" stroke-width="2" />
               </svg>
             </div>
-            <div *ngIf="selectedImg">
-              <app-img-agents-info-screen [selectedImg]="selectedImg"/>
+            <div *ngIf="selectedInfo">
+              <app-img-agents-info-screen [selectedInfo]="selectedInfo"/>
             </div>
           </div>
-          <div class="col-auto p-1" (click)="selectImg(item)" (click)="selectInfo(item)"  *ngFor="let item of agentAllInfo">
-            <app-icon-agents-info-screen [agentImg]="item" />
+          <div class="col-auto p-0" (click)="selectInfo(item)" *ngFor="let item of agentAllInfo">
+            <app-icon-agents-info-screen [agentImg]="item"/>
           </div>
         </div>
       </div>
 
       <div class="col-12 offset-md-1 col-md-5 d-flex align-items-center" *ngIf="selectedInfo">
-        <app-abilities-agents-info-screen [selectedInfo]="selectedInfo"/>
+        <app-abilities-agents-info-screen [selectedInfo]="selectedInfo" />
       </div>
     </div>
   </div>

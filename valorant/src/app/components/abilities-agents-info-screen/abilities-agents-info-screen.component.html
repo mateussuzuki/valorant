@@ -9,8 +9,8 @@
         <div class="col-2 mb-4">
           <img src="{{ selectedInfo.role.displayIcon }}" alt="agentRole" class="iconRole">
         </div>
-        <div class="col-10 d-flex align-items-center mb-3">
-          <h2 class="m-0"> {{ selectedInfo.role.displayName }} </h2>
+        <div class="col-10 text-start mt-2">
+          <h2 class=""> {{ selectedInfo.role.displayName }} </h2>
         </div>
         <div class="col-12">
           <p> {{ selectedInfo.role.description }} </p>
@@ -21,12 +21,12 @@
   
     <ul class="nav nav-tabs row mb-4" id="myTab" role="tablist">
       <li class="nav-item col-3" >
-        <button class="nav-link buttonSkills" id="Q" data-bs-toggle="tab" data-bs-target="#abilitie1" type="button"[class.active]="activeTab === 'Q'" (click)="setActiveTab('Q')">
+        <button class="nav-link buttonSkills active" id="Q" data-bs-toggle="tab" data-bs-target="#abilitie1" type="button">
           <img src="{{ selectedInfo.abilities[0].displayIcon }}" alt="icon skill" class="iconSkills">
         </button>
       </li>
       <li class="nav-item col-3">
-        <button class="nav-link buttonSkills" id="E" data-bs-toggle="tab" data-bs-target="#abilitie2" type="button" >
+        <button class="nav-link buttonSkills" id="E" data-bs-toggle="tab" data-bs-target="#abilitie2" type="button">
           <img src="{{ selectedInfo.abilities[1].displayIcon }}" alt="icon skill" class="iconSkills">
         </button>
       </li>
@@ -37,7 +37,7 @@
       </li>
       <li class="nav-item col-3">
         <button class="nav-link buttonSkills" id="X" data-bs-toggle="tab" data-bs-target="#abilitie4" type="button" >
-          <img src="{{ selectedInfo.abilities[3].displayIcon }}" alt="icon skill" class="iconSkills">
+          <img src="{{ selectedInfo.abilities[3].displayIcon }}" alt="icon skill" class="iconSkills ">
         </button>
       </li>
     </ul>

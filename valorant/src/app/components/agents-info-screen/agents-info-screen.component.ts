@@ -9,10 +9,9 @@ import { ApiService } from 'src/app/services/api.service';
   styleUrls: ['./agents-info-screen.component.scss']
 })
 
-export class AgentsInfoScreenComponent implements OnInit{
-
+export class AgentsInfoScreenComponent implements OnInit {
+  
   agentAllInfo:AgentsInfo[] = []
-  selectedImg!:AgentsInfo
   selectedInfo!:AgentsInfo
 
   constructor (private agentsService: ApiService) {
@@ -27,24 +26,16 @@ export class AgentsInfoScreenComponent implements OnInit{
     .subscribe((response: any) => {
       response.data.forEach((item:any) => {
         if(item.isPlayableCharacter == true) {
-          console.log(item.role.description);
           this.agentAllInfo.push(item)
         }
       });
-      this.selectedImg = response.data[23]
+      this.selectedInfo = response.data[23]
       this.selectedInfo = response.data[23]
     })
   }
 
-
-
-  selectImg(image:AgentsInfo): void {
-    this.selectedImg = image
-  }
-
   selectInfo(info:AgentsInfo): void {
     this.selectedInfo = info
-    
   }
 
 }
