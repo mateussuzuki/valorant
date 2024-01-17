@@ -8,6 +8,6 @@ import { AgentsInfo } from 'src/app/models/agents.model';
 })
 export class AbilitiesAgentsInfoScreenComponent {
   @Input() selectedInfo!:AgentsInfo
-
+  
   
 }

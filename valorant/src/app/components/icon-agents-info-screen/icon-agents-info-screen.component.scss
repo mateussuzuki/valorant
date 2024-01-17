@@ -4,17 +4,6 @@
   cursor: pointer;
 }
 
-.borderIcon {
-  width: 85px;
-  border: 1px solid var(--white);
-  overflow: hidden;
-  position: relative;
-}
-
-.borderIcon.active {
-  border: 2px solid var(--lightRed);
-}
-
 .hoverScale:hover {
   transform: scale(1.1);
 }

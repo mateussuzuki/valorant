@@ -8,3 +8,15 @@
   margin-bottom: 110px;
   margin-top: 70px;
 }
+
+.borderIcon {
+  width: 82px;
+  border: 1px solid var(--white);
+  overflow: hidden;
+  position: relative;
+}
+
+.selectedIcon {
+  border: 2px solid var(--lightRed);
+  
+}

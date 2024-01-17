@@ -14,6 +14,8 @@ export class AgentsInfoScreenComponent implements OnInit {
   agentAllInfo:AgentsInfo[] = []
   selectedInfo!:AgentsInfo
 
+  selectedIcon!:AgentsInfo
+
   constructor (private agentsService: ApiService) {
   }
 
@@ -30,12 +32,16 @@ export class AgentsInfoScreenComponent implements OnInit {
         }
       });
       this.selectedInfo = response.data[23]
-      this.selectedInfo = response.data[23]
+      this.selectedIcon = response.data[23]
     })
   }
 
   selectInfo(info:AgentsInfo): void {
     this.selectedInfo = info
+  }
+
+  selectIcon(icon:any): void {
+    this.selectedIcon = icon
   }
 
 }
