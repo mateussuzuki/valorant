@@ -21,9 +21,9 @@ export class AgentsInfoScreenComponent implements OnInit {
   
   agentAllInfo:AgentsInfo[] = []
   selectedInfo!:AgentsInfo
+  selectedIcon!:AgentsInfo
 
   imgFade:string = "in"
-  selectedIcon!:AgentsInfo
 
   constructor (private agentsService: ApiService) {
   }
@@ -38,6 +38,7 @@ export class AgentsInfoScreenComponent implements OnInit {
       response.data.forEach((item:any) => {
         if(item.isPlayableCharacter == true) {
           this.agentAllInfo.push(item)
+          
         }
       });
       this.selectedInfo = response.data[23]

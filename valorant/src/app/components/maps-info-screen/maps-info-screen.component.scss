@@ -1,0 +1,14 @@
+.imgs {
+  width: 11%;
+  border: 1px solid var(--black);
+  box-shadow: 1px 2px 30px 5px var(--black);
+}
+
+.selected {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100vw;
+  height: 100vh;
+}

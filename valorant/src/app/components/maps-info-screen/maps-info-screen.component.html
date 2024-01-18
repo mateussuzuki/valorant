@@ -1,0 +1,8 @@
+<div class="container-fluid ps-3">
+  <div *ngFor="let item of maps" 
+  class="imgs"
+  (click)="selectMap(item)" 
+  [class.selected]="item === selectedMap">
+    <app-maps-img-info-screen [maps]="item"/>
+  </div>
+</div>

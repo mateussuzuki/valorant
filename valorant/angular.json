@@ -17,6 +17,9 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "allowedCommonJsDependencies": [
+              "lodash"
+           ],
             "outputPath": "dist/valorant",
             "index": "src/index.html",
             "main": "src/main.ts",
@@ -82,7 +85,8 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "valorant:build"
+            "browserTarget": "valorant:build",
+            
           }
         },
         "test": {

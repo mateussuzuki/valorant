@@ -1,5 +1,8 @@
 export interface Maps {
   displayName:string
-  splash:string
   narrativeDescription:string
+  coordinates: string
+  displayIcon:string
+  splash:string
+  premierBackgroundImage:string
 }
