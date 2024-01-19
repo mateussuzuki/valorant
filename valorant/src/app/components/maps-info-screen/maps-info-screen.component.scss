@@ -17,30 +17,32 @@
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  max-width: 170px;
+  max-width: 150px;
   max-height: 80vh;
   box-shadow: 1px 2px 15px 5px var(--black);
-
+  border-radius: 5px;
 }
 
 .carouselContent {
-  height: 80vh;
   transition: transform 0.5s ease-in-out;
-  min-height: 100vh;
+  
 }
 
 .carousel-item {
-  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0px;
+  margin: 0;
 }
 
 .marginTop {
-  margin-top: 5%;
+  margin-top: 6%;
 }
 
 .img {
-  height: 100vh;
+  height: 26.7vh;
+}
+
+.active {
+  border-right: 2px solid var(--lightRed);
 }

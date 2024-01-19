@@ -5,14 +5,20 @@
   </div>
 </div> -->
 
-<div class="marginTop">
+<div class="marginTop ms-5 active">
+
   <div class="verticalCarousel">
-    <div *ngFor="let item of maps" class="carousel-item">
-      <div class="carouselContent" [style.transform]="'translateY(' + (-currentImg * 100) + '%)'">
-        <img src="{{ item.splash }}" alt="" class="img">
+    <div *ngFor="let item of maps; let i = index" 
+    class="carousel-item" 
+    [class.active]="i === currentImg">
+      <div class="carouselContent"  
+      [style.transform]="'translateY(' + (-currentImg * 100) + '%)'" >
+        <img src="{{ item.splash }}" alt="" class="img" >
       </div>
     </div>
   </div>
-  <button (click)="prev()">Anterior</button>
-  <button (click)="next()">Próximo</button>
+  
 </div>
+
+<button (click)="prev()">Anterior</button>
+<button (click)="next()">Próximo</button>
