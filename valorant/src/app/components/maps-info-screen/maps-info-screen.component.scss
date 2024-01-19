@@ -17,7 +17,7 @@
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  max-width: 150px;
+  max-width: 190px;
   max-height: 80vh;
   box-shadow: 1px 2px 15px 5px var(--black);
   border-radius: 5px;
@@ -30,19 +30,39 @@
 
 .carousel-item {
   display: flex;
-  align-items: center;
   justify-content: center;
-  margin: 0;
 }
 
 .marginTop {
   margin-top: 6%;
+  width: 190px;
+  position: relative;
 }
 
 .img {
-  height: 26.7vh;
+  height: 100vh;
 }
 
-.active {
-  border-right: 2px solid var(--lightRed);
+.buttonPrev {
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  margin-left: -25px;
+  top: -5%;
+}
+
+.buttonNext {
+  position: absolute;
+  z-index: 1;
+  top: 1900%;
+}
+
+.buttons {
+  background-color: transparent;
+  border: none;
+}
+
+svg {
+  width: 40px;
+  height: 40px;
 }
