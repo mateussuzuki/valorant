@@ -1,8 +1,18 @@
-<div class="container-fluid ps-3">
+<!-- <div class="container-fluid ps-3">
   <div *ngFor="let item of maps" 
-  class="imgs"
-  (click)="selectMap(item)" 
-  [class.selected]="item === selectedMap">
+  class="imgs" >
     <app-maps-img-info-screen [maps]="item"/>
   </div>
+</div> -->
+
+<div class="marginTop">
+  <div class="verticalCarousel">
+    <div *ngFor="let item of maps" class="carousel-item">
+      <div class="carouselContent" [style.transform]="'translateY(' + (-currentImg * 100) + '%)'">
+        <img src="{{ item.splash }}" alt="" class="img">
+      </div>
+    </div>
+  </div>
+  <button (click)="prev()">Anterior</button>
+  <button (click)="next()">Próximo</button>
 </div>

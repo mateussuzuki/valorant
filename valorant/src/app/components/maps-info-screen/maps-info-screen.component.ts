@@ -10,12 +10,25 @@ import { ApiService } from 'src/app/services/api.service';
 export class MapsInfoScreenComponent implements OnInit{
 
   maps:Maps[] = [] 
-  selectedMap!:Maps
-
+  // selectedMap!:Maps
+  currentImg = 0
+  
   constructor(private mapsApi: ApiService){}
 
   ngOnInit(): void {
     this.takeMaps()
+  }
+
+  next(): void {
+    if(this.currentImg < this.maps.length - 1) {
+      this.currentImg ++
+    }
+  }
+
+  prev(): void {
+    if(this.currentImg > 0) {
+      this.currentImg --
+    }
   }
 
   takeMaps() {
@@ -25,12 +38,12 @@ export class MapsInfoScreenComponent implements OnInit{
           this.maps.push(item)
       });
       console.log(this.maps);
-      this.selectedMap = response.data[0]
+      // this.selectedMap = response.data[0]
     }) 
   }
 
-  selectMap(item:any) {
-    this.selectedMap = item
-  }
+  // selectMap(item:any) {
+  //   this.selectedMap = item
+  // }
 
 }
