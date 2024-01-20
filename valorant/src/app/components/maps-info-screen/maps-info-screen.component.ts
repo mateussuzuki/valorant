@@ -49,6 +49,10 @@ export class MapsInfoScreenComponent implements OnInit{
     }) 
   }
 
+  setCurrentMap(current: number) {
+    this.currentImg = current
+  }
+
   // selectMap(item:any) {
   //   this.selectedMap = item
   // }

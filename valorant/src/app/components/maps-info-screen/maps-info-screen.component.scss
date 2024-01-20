@@ -1,31 +1,15 @@
-// .imgs {
-//   width: 11%;
-//   border: 1px solid var(--black);
-//   box-shadow: 1px 2px 30px 5px var(--black);
-// }
-
-// .selected {
-//   position: absolute;
-//   top: 0;
-//   left: 0;
-//   z-index: -1;
-//   width: 100vw;
-//   height: 100vh;
-// }
-
 .verticalCarousel {
   display: flex;
   flex-direction: column;
   overflow: hidden;
   max-width: 190px;
   max-height: 80vh;
-  box-shadow: 1px 2px 15px 5px var(--black);
+  box-shadow: 1px 2px 20px 7px var(--black);
   border-radius: 5px;
 }
 
 .carouselContent {
   transition: transform 0.5s ease-in-out;
-  
 }
 
 .carousel-item {
@@ -35,34 +19,52 @@
 
 .marginTop {
   margin-top: 6%;
-  width: 190px;
+  max-width: 190px;
   position: relative;
+
 }
 
 .img {
   height: 100vh;
 }
 
-.buttonPrev {
-  position: absolute;
-  z-index: 1;
-  left: 50%;
-  margin-left: -25px;
-  top: -5%;
-}
-
-.buttonNext {
-  position: absolute;
-  z-index: 1;
-  top: 1900%;
-}
-
-.buttons {
+.buttonUp,
+.buttonBack {
   background-color: transparent;
   border: none;
+  transition: all 0.5s ease;
+}
+
+.buttonUp:hover {
+  transform: translateY(-5px);
+}
+
+.buttonBack:hover {
+  transform: translateY(5px);
 }
 
 svg {
   width: 40px;
   height: 40px;
+}
+
+.buttonsCircle {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.buttonsCircle button {
+  background: var(--black);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  height: 12px;
+  width: 12px;
+}
+
+.buttonsCircle button.current {
+  background: var(--lightRed);
+  cursor: default;
 }
