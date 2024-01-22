@@ -5,73 +5,87 @@
   </div>
 </div> -->
 
-<div class="marginTop ms-5 row">
+<!-- <div class="marginTop ms-5 row"> -->
 
-  <div class="buttonsCircle me-2 col-1">
+  <!-- <div class="buttonsCircle me-2 col-1">
     <button *ngFor="let item of maps; index as i" [class.current]="i === currentImg" (click)="setCurrentMap(i)">
     </button>
   </div>
 
-  <div class="verticalCarousel col-7">
+  <div class="verticalCarousel col-9">
     <div *ngFor="let item of maps" class="carouselItem">
-      <app-maps-img-info-screen [maps]="item" [currentImg]="currentImg"/>
+      <app-maps-img-info-screen [maps]="item" [currentImg]="currentImg" />
     </div>
-  </div>
+  </div> -->
 
-  <div class="arrows d-flex flex-column justify-content-center ms-3 col-1">
 
-    <div class="d-flex justify-content-center">
-      <button (click)="prev()" class="buttonUp">
-        <svg viewBox="0 0 18 10">
-          <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round"
-            stroke-linejoin="round">
-            <g id="24-px-Icons" transform="translate(-267.000000, -79.000000)" stroke="#FD4556">
-              <g id="ic_up" transform="translate(264.000000, 72.000000)">
-                <g transform="translate(12.000000, 12.000000) rotate(-270.000000) translate(-12.000000, -12.000000) "
-                  id="ic_back">
-                  <g stroke-width="2">
-                    <g id="back" transform="translate(8.000000, 4.000000)">
-                      <path d="M8,0 L0,8" id="Line"></path>
-                      <path d="M0,8 L8,16" id="Line"></path>
-                    </g>
-                  </g>
-                </g>
-              </g>
-            </g>
-          </g>
-        </svg>
-      </button>
-    </div>
+<!-- </div> -->
 
-    <div class="d-flex justify-content-center">
-      <button (click)="next()" class="buttonBack">
-        <svg viewBox="0 0 18 10">
-          <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round"
-            stroke-linejoin="round">
-            <g id="24-px-Icons" transform="translate(-315.000000, -79.000000)" stroke="#FD4556">
-              <g id="ic_down" transform="translate(312.000000, 72.000000)">
-                <g transform="translate(12.000000, 12.000000) rotate(-90.000000) translate(-12.000000, -12.000000) "
-                  id="ic_back">
-                  <g stroke-width="2">
-                    <g id="back" transform="translate(8.000000, 4.000000)">
-                      <path d="M8,0 L0,8" id="Line"></path>
-                      <path d="M0,8 L8,16" id="Line"></path>
-                    </g>
-                  </g>
-                </g>
-              </g>
-            </g>
-          </g>
-        </svg>
-      </button>
-    </div>
-
-  </div>
-</div>
 <div class="verticalCarouselFull">
+
   <div *ngFor="let item of maps" class="carouselItemFull">
-    <app-maps-full-img-info-screen [maps]="item" [currentImg]="currentImg"/>
+    <app-maps-full-img-info-screen [maps]="item" [currentImg]="currentImg" />
   </div>
-</div>
+
+  <div class="buttonsCircle">
+    <button *ngFor="let item of maps; index as i" [class.current]="i === currentImg" (click)="setCurrentMap(i)">
+    </button>
+  </div>
+
+  <div class="verticalCarousel">
+    <div *ngFor="let item of maps" class="carouselItem">
+      <app-maps-img-info-screen [maps]="item" [currentImg]="currentImg" />
+    </div>
+  </div>
+
+  <div class="d-flex justify-content-center">
+    <button (click)="prev()" class="buttonUp">
+      <svg viewBox="0 0 18 10">
+        <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round"
+          stroke-linejoin="round">
+          <g id="24-px-Icons" transform="translate(-267.000000, -79.000000)" stroke="#000">
+            <g id="ic_up" transform="translate(264.000000, 72.000000)">
+              <g transform="translate(12.000000, 12.000000) rotate(-270.000000) translate(-12.000000, -12.000000) "
+                id="ic_back">
+                <g stroke-width="2">
+                  <g id="back" transform="translate(8.000000, 4.000000)">
+                    <path d="M8,0 L0,8" id="Line"></path>
+                    <path d="M0,8 L8,16" id="Line"></path>
+                  </g>
+                </g>
+              </g>
+            </g>
+          </g>
+        </g>
+      </svg>
+    </button>
+  </div>
+  
+  <div class="d-flex justify-content-center">
+    <button (click)="next()" class="buttonBack">
+      <svg viewBox="0 0 18 10">
+        <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round"
+          stroke-linejoin="round">
+          <g id="24-px-Icons" transform="translate(-315.000000, -79.000000)" stroke="#000">
+            <g id="ic_down" transform="translate(312.000000, 72.000000)">
+              <g transform="translate(12.000000, 12.000000) rotate(-90.000000) translate(-12.000000, -12.000000) "
+                id="ic_back">
+                <g stroke-width="2">
+                  <g id="back" transform="translate(8.000000, 4.000000)">
+                    <path d="M8,0 L0,8" id="Line"></path>
+                    <path d="M0,8 L8,16" id="Line"></path>
+                  </g>
+                </g>
+              </g>
+            </g>
+          </g>
+        </g>
+      </svg>
+    </button>
+  </div>
+
+<div>
+
+
 
 

@@ -18,6 +18,7 @@ import { AbilitiesAgentsInfoScreenComponent } from './components/abilities-agent
 import { MapsInfoScreenComponent } from './components/maps-info-screen/maps-info-screen.component';
 import { MapsImgInfoScreenComponent } from './components/maps-img-info-screen/maps-img-info-screen.component';
 import { MapsFullImgInfoScreenComponent } from './components/maps-full-img-info-screen/maps-full-img-info-screen.component';
+import { MapsInfosInfoScreenComponent } from './components/maps-infos-info-screen/maps-infos-info-screen.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { MapsFullImgInfoScreenComponent } from './components/maps-full-img-info-
     AbilitiesAgentsInfoScreenComponent,
     MapsInfoScreenComponent,
     MapsImgInfoScreenComponent,
-    MapsFullImgInfoScreenComponent
+    MapsFullImgInfoScreenComponent,
+    MapsInfosInfoScreenComponent
   ],
   imports: [
     BrowserModule,
