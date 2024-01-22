@@ -11,7 +11,7 @@ export class MapsInfoScreenComponent implements OnInit{
 
   maps:Maps[] = [] 
   // selectedMap!:Maps
-  currentImg = 0
+  currentImg:number = 0
 
   
   constructor(private mapsApi: ApiService){}
@@ -21,21 +21,14 @@ export class MapsInfoScreenComponent implements OnInit{
   }
 
   next(): void {
-    // if(this.currentImg > 10) {
-    //   this.currentImg = this.currentImg = 0;
-    // } else {
-    //   this.currentImg = (this.currentImg + 1)
-    // }
     this.currentImg = (this.currentImg + 1) % this.maps.length;
   }
 
   prev(): void {
-    // if(this.currentImg < 1) {
-    //   this.currentImg = this.currentImg = 11
-    // } else {
-    //   this.currentImg = this.currentImg - 1 ;
-    // }
     this.currentImg = (this.currentImg - 1 + this.maps.length) % this.maps.length;
+    if (this.currentImg < 0) {
+      this.currentImg = this.maps.length - 1;
+    }
   }
 
   takeMaps() {
@@ -45,16 +38,10 @@ export class MapsInfoScreenComponent implements OnInit{
           this.maps.push(item)
       });
       console.log(this.maps);
-      // this.selectedMap = response.data[0]
     }) 
   }
 
   setCurrentMap(current: number) {
     this.currentImg = current
   }
-
-  // selectMap(item:any) {
-  //   this.selectedMap = item
-  // }
-
 }

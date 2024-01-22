@@ -17,6 +17,7 @@ import { IconAgentsInfoScreenComponent } from './components/icon-agents-info-scr
 import { AbilitiesAgentsInfoScreenComponent } from './components/abilities-agents-info-screen/abilities-agents-info-screen.component';
 import { MapsInfoScreenComponent } from './components/maps-info-screen/maps-info-screen.component';
 import { MapsImgInfoScreenComponent } from './components/maps-img-info-screen/maps-img-info-screen.component';
+import { MapsFullImgInfoScreenComponent } from './components/maps-full-img-info-screen/maps-full-img-info-screen.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { MapsImgInfoScreenComponent } from './components/maps-img-info-screen/ma
     IconAgentsInfoScreenComponent,
     AbilitiesAgentsInfoScreenComponent,
     MapsInfoScreenComponent,
-    MapsImgInfoScreenComponent
+    MapsImgInfoScreenComponent,
+    MapsFullImgInfoScreenComponent
   ],
   imports: [
     BrowserModule,

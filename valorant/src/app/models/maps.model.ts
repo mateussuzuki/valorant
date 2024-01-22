@@ -5,4 +5,5 @@ export interface Maps {
   displayIcon:string
   splash:string
   premierBackgroundImage:string
+  listViewIconTall:string
 }

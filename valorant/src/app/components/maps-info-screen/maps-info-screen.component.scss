@@ -8,11 +8,7 @@
   border-radius: 5px;
 }
 
-.carouselContent {
-  transition: transform 0.5s ease-in-out;
-}
-
-.carousel-item {
+.carouselItem {
   display: flex;
   justify-content: center;
 }
@@ -22,10 +18,6 @@
   max-width: 190px;
   position: relative;
 
-}
-
-.img {
-  height: 100vh;
 }
 
 .buttonUp,
@@ -67,4 +59,22 @@ svg {
 .buttonsCircle button.current {
   background: var(--lightRed);
   cursor: default;
+}
+
+
+.verticalCarouselFull {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+
+  max-height: 100vh;
+  max-width: 100vw;
+}
+
+.carouselItemFull {
+  display: flex;
+  justify-content: center;
 }

@@ -13,10 +13,8 @@
   </div>
 
   <div class="verticalCarousel col-7">
-    <div *ngFor="let item of maps" class="carousel-item">
-      <div class="carouselContent" [style.transform]="'translateY(' + (-currentImg * 100) + '%)'">
-        <img src="{{ item.splash }}" alt="" class="img">
-      </div>
+    <div *ngFor="let item of maps" class="carouselItem">
+      <app-maps-img-info-screen [maps]="item" [currentImg]="currentImg"/>
     </div>
   </div>
 
@@ -69,5 +67,11 @@
     </div>
 
   </div>
-
 </div>
+<div class="verticalCarouselFull">
+  <div *ngFor="let item of maps" class="carouselItemFull">
+    <app-maps-full-img-info-screen [maps]="item" [currentImg]="currentImg"/>
+  </div>
+</div>
+
+
