@@ -9,5 +9,5 @@ import { Maps } from 'src/app/models/maps.model';
 export class MapsInfosInfoScreenComponent {
 
   @Input() maps!:Maps
-
+  @Input() currentImg: number = 0
 }

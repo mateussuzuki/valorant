@@ -10,7 +10,6 @@ import { ApiService } from 'src/app/services/api.service';
 export class MapsInfoScreenComponent implements OnInit{
 
   maps:Maps[] = [] 
-  // selectedMap!:Maps
   currentImg:number = 0
 
   

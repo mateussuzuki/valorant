@@ -1,1 +1,12 @@
-  <h2>{{ maps.narrativeDescription }}</h2>
+<div class="container">
+  <div class="row blur">
+    <div class="col-12 col-md-5 d-flex justify-content-center flex-column">
+      <h1>{{ maps.displayName }}</h1>
+      <p>{{ maps.narrativeDescription }}</p>
+    </div>
+    <div class="col-12 col-md-7 d-flex align-items-center flex-column">
+      <h3>{{ maps.coordinates }}</h3>
+      <img src="{{ maps.displayIcon }}" alt="">
+    </div>
+  </div>
+</div>
