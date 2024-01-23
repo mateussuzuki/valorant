@@ -16,9 +16,9 @@ import { ImgAgentsInfoScreenComponent } from './components/img-agents-info-scree
 import { IconAgentsInfoScreenComponent } from './components/icon-agents-info-screen/icon-agents-info-screen.component';
 import { AbilitiesAgentsInfoScreenComponent } from './components/abilities-agents-info-screen/abilities-agents-info-screen.component';
 import { MapsInfoScreenComponent } from './components/maps-info-screen/maps-info-screen.component';
-import { MapsImgInfoScreenComponent } from './components/maps-img-info-screen/maps-img-info-screen.component';
 import { MapsFullImgInfoScreenComponent } from './components/maps-full-img-info-screen/maps-full-img-info-screen.component';
 import { MapsInfosInfoScreenComponent } from './components/maps-infos-info-screen/maps-infos-info-screen.component';
+import { GunsInfoScreenComponent } from './components/guns-info-screen/guns-info-screen.component';
 
 @NgModule({
   declarations: [
@@ -34,9 +34,9 @@ import { MapsInfosInfoScreenComponent } from './components/maps-infos-info-scree
     IconAgentsInfoScreenComponent,
     AbilitiesAgentsInfoScreenComponent,
     MapsInfoScreenComponent,
-    MapsImgInfoScreenComponent,
     MapsFullImgInfoScreenComponent,
-    MapsInfosInfoScreenComponent
+    MapsInfosInfoScreenComponent,
+    GunsInfoScreenComponent
   ],
   imports: [
     BrowserModule,

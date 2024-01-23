@@ -10,6 +10,8 @@ export class ApiService {
   private apiUrlAgents = environment.apiUrlAgents;
   private apiUrlMaps = environment.apiUrlMaps;
   private apiUrlGunsCollection = environment.apiUrlGunsCollection
+  private apiUrlGuns = environment.apiUrlGuns
+
   constructor(private http: HttpClient) { }
 
   getAgents() {
@@ -19,6 +21,10 @@ export class ApiService {
   getMaps() {
     return this.http.get(this.apiUrlMaps)
   } 
+
+  getGuns() {
+    return this.http.get(this.apiUrlGuns)
+  }
 
   getGunsCollection() {
     return this.http.get(this.apiUrlGunsCollection)
