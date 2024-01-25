@@ -4,6 +4,7 @@ export interface GunsInfo {
   KillStreamIcon:string
   weaponStats:WeaponStats
   damageRanges:DamageRanges[]
+  shopData:ShopData
 }
 
 export interface WeaponStats {
@@ -14,6 +15,7 @@ export interface WeaponStats {
   reloadTimeSeconds:number
   wallPenetration:string
   adsStats:AdsStats
+  altShotgunStats:AltShotgunStats
 }
 
 export interface AdsStats {

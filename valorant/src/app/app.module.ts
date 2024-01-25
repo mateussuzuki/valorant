@@ -19,6 +19,13 @@ import { MapsInfoScreenComponent } from './components/maps-info-screen/maps-info
 import { MapsFullImgInfoScreenComponent } from './components/maps-full-img-info-screen/maps-full-img-info-screen.component';
 import { MapsInfosInfoScreenComponent } from './components/maps-infos-info-screen/maps-infos-info-screen.component';
 import { GunsInfoScreenComponent } from './components/guns-info-screen/guns-info-screen.component';
+import { SidearmsInterfaceComponent } from './components/sidearms-interface/sidearms-interface.component';
+import { SmgInterfaceComponent } from './components/smg-interface/smg-interface.component';
+import { ShotgunsInterfaceComponent } from './components/shotguns-interface/shotguns-interface.component';
+import { RiflesInterfaceComponent } from './components/rifles-interface/rifles-interface.component';
+import { MeleeInterfaceComponent } from './components/melee-interface/melee-interface.component';
+import { SniperRifleInterfaceComponent } from './components/sniper-rifle-interface/sniper-rifle-interface.component';
+import { MachineGunsInterfaceComponent } from './components/machine-guns-interface/machine-guns-interface.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +43,14 @@ import { GunsInfoScreenComponent } from './components/guns-info-screen/guns-info
     MapsInfoScreenComponent,
     MapsFullImgInfoScreenComponent,
     MapsInfosInfoScreenComponent,
-    GunsInfoScreenComponent
+    GunsInfoScreenComponent,
+    SidearmsInterfaceComponent,
+    SmgInterfaceComponent,
+    ShotgunsInterfaceComponent,
+    RiflesInterfaceComponent,
+    MeleeInterfaceComponent,
+    SniperRifleInterfaceComponent,
+    MachineGunsInterfaceComponent,
   ],
   imports: [
     BrowserModule,

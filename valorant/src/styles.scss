@@ -26,11 +26,11 @@ p {
   border-radius: 5px;
   padding: 1px;
   border: 1px solid transparent;
-  background: linear-gradient(to top, 
-  var(--black) 20%,
-  transparent 20%,
-  transparent 80%,
-  var(--black) 80%);
+  background: linear-gradient(to top,
+      var(--black) 20%,
+      transparent 20%,
+      transparent 80%,
+      var(--black) 80%);
   box-sizing: border-box
 }
 
@@ -82,6 +82,19 @@ p {
   }
 }
 
+.containerGuns {
+  display: flex;
+  flex-direction: column;
+  width: 40vh;
+  margin-bottom: 10px;
+  background-color: var(--white);
+  border: none;
+}
+
+.imgGuns {
+  width: 100%;
+  padding: 10px;
+}
 
 
 
