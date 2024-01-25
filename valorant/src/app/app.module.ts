@@ -26,6 +26,7 @@ import { RiflesInterfaceComponent } from './components/rifles-interface/rifles-i
 import { MeleeInterfaceComponent } from './components/melee-interface/melee-interface.component';
 import { SniperRifleInterfaceComponent } from './components/sniper-rifle-interface/sniper-rifle-interface.component';
 import { MachineGunsInterfaceComponent } from './components/machine-guns-interface/machine-guns-interface.component';
+import { ModalInterfaceComponent } from './components/modal-interface/modal-interface.component';
 
 @NgModule({
   declarations: [
@@ -51,6 +52,7 @@ import { MachineGunsInterfaceComponent } from './components/machine-guns-interfa
     MeleeInterfaceComponent,
     SniperRifleInterfaceComponent,
     MachineGunsInterfaceComponent,
+    ModalInterfaceComponent,
   ],
   imports: [
     BrowserModule,

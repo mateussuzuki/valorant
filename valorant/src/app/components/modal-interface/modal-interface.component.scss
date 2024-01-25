@@ -1,0 +1,37 @@
+.modalContainer {
+  width: 60vw;
+  height: 85vh;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--black);
+  padding: 20px;
+  z-index: 1000;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border: 1px solid var(--white);
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  width: 70px;
+  height: 70px;
+}
+
+img {
+  width: 100%;  
+}
+
+.imageShop {
+  width: 100%;
+}
+
+h2 {
+  font-size: 3em;
+  color: var(--lightRed);
+}
+
+h3 {
+  color: var(--white);
+}

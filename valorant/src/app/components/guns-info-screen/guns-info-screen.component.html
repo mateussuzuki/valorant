@@ -1,37 +1,55 @@
 <div class="d-flex justify-content-around marginTop">
+
   <div class="d-flex flex-column align-items-center">
     <h1>SideArms</h1>
     <div *ngFor="let guns of sidearms">
-      <app-sidearms-interface [sidearms]="guns" />
+      <app-sidearms-interface [sidearms]="guns" 
+      (click)="setCurrentModal(guns)"/>
     </div>
   </div>
+
   <div class="d-flex flex-column align-items-center">
     <h1>SMGs</h1>
     <div *ngFor="let guns of smgs">
-      <app-smg-interface [smgs]="guns" />
+      <app-smg-interface [smgs]="guns" 
+      (click)="setCurrentModal(guns)"/>
     </div>
     <h1 class="mt-5">Shotguns</h1>
     <div *ngFor="let guns of shotguns">
-      <app-shotguns-interface [shotguns]="guns" />
+      <app-shotguns-interface [shotguns]="guns" 
+      (click)="setCurrentModal(guns)"/>
     </div>
   </div>
+
   <div class="d-flex flex-column align-items-center">
     <h1 class="m-0">Rifles</h1>
     <div *ngFor="let guns of rifles">
-      <app-rifles-interface [rifles]="guns" />
+      <app-rifles-interface [rifles]="guns" 
+      (click)="setCurrentModal(guns)"/>
     </div>
     <div *ngIf="melee">
-      <app-melee-interface [melee]="melee" />
+      <app-melee-interface [melee]="melee"/>
     </div>
   </div>
+
   <div class="d-flex flex-column align-items-center">
     <h1>Sniper Rifles</h1>
     <div *ngFor="let guns of sniperRifle">
-      <app-sniper-rifle-interface [sniperRifle]="guns" />
+      <app-sniper-rifle-interface [sniperRifle]="guns"
+      (click)="setCurrentModal(guns)"/>
     </div>
     <h1 class="mt-5">Machine Guns</h1>
     <div *ngFor="let guns of machineGun">
-      <app-machine-guns-interface [machineGun]="guns" />
+      <app-machine-guns-interface [machineGun]="guns" 
+      (click)="setCurrentModal(guns)"/>
     </div>
+  </div>
+
+</div>
+
+<div *ngIf="currentModal">
+    <app-modal-interface [guns]="currentModal" (close)="toggleOff()"/>
+  <div class="overlay" (click)="toggleOff()">
+
   </div>
 </div>

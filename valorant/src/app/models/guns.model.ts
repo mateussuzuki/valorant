@@ -34,8 +34,9 @@ export interface DamageRanges {
 
 export interface ShopData {
   cost:number
-  category:string
+  // category:string
   categoryText:string
+  newImage:string
 }
 
 export interface AltShotgunStats {
