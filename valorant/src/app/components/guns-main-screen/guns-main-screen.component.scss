@@ -43,3 +43,19 @@ h4 {
     color: var(--black);
   }
 }
+
+@media (max-width: 767px) {
+  .imgGunCollection {
+    display: none;
+  }
+
+  .line {
+    border-left: 1px solid var(--lightRed);
+    padding-left: 4%;
+  }
+
+  h1 {
+    font-size: 4.5em;
+  }
+  
+}

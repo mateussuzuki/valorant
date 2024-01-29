@@ -25,7 +25,12 @@ h4 {
   color: var(--black);
 }
 
-// .btn {
-//   background-color: var(--white);
-//   font-size: 1.3em;
-// }
+@media (max-width: 767px) {
+  .imgMap {
+    display: none;
+  }
+  
+  h1 {
+    font-size: 4.5em;
+  }
+}

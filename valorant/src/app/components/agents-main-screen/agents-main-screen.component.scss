@@ -15,14 +15,11 @@
 .bustPortrait {
   width: 1000px;
   position: relative;
-
-
 }
 
 .backgroundBustPortrait {
   width: 600px;
   position: absolute;
-
 }
 
 .borderButton {
@@ -41,5 +38,27 @@
   }
   &:hover {
     color: var(--black);
+  }
+}
+
+
+@media (max-width: 767px) {
+  .writtenPart {
+    padding-left: 5%;
+    margin-top: 5%;
+  }
+
+  .bustPortrait {
+    width: 600px;
+    position: relative;
+    left: 27%;
+  }
+  
+  .backgroundBustPortrait {
+    width: 340px;
+    position: absolute;
+  }
+  h1 {
+    font-size: 4.5em;
   }
 }

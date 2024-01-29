@@ -1,6 +1,6 @@
 <div class="container">
   <div *ngIf="agentsImg" class="row">
-    <div class="col-12 col-lg-5 d-flex flex-column justify-content-center">
+    <div class="col-12 col-xl-5 d-flex flex-column justify-content-center">
       <div class="writtenPart py-5">
         <h1
         data-aos="fade-right"
@@ -31,7 +31,7 @@
         </div>
       </div>
     </div>
-    <div *ngIf="agentsImg" [@fadeInOut]="imgFade" class="col-12 col-lg-7 d-flex justify-content-end ">
+    <div *ngIf="agentsImg" [@fadeInOut]="imgFade" class="col-12 col-xl-7 d-flex justify-content-end ">
       <img [src]="agentsImg.background" alt="background agent" class="backgroundBustPortrait">
       <img [src]="agentsImg.bustPortrait" alt="image agent" class="bustPortrait">
     </div>
