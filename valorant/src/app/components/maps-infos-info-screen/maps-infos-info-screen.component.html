@@ -1,12 +1,14 @@
-<div class="container">
-  <div class="row blur">
-    <div class="col-12 col-md-5 d-flex justify-content-center flex-column">
-      <h1>{{ maps.displayName }}</h1>
-      <p>{{ maps.narrativeDescription }}</p>
-    </div>
-    <div class="col-12 col-md-7 d-flex align-items-center flex-column">
-      <h3>{{ maps.coordinates }}</h3>
+<div class="row d-flex justify-content-center">
+  <div class="col-7 offset-1">
+    <div class="mapContainer">
       <img src="{{ maps.displayIcon }}" alt="">
+    </div>
+  </div>
+  <div class="col-4">
+    <div class="mapInfoContainer">
+      <h1> {{ maps.displayName }} </h1>
+      <h2> {{ maps.coordinates }} </h2>
+      <p> {{ maps.narrativeDescription }} </p>
     </div>
   </div>
 </div>

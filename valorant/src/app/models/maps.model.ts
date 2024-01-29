@@ -4,6 +4,4 @@ export interface Maps {
   coordinates: string
   displayIcon:string
   splash:string
-  premierBackgroundImage:string
-  listViewIconTall:string
 }

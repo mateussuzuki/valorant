@@ -10,7 +10,7 @@ import { ApiService } from 'src/app/services/api.service';
 export class MapsInfoScreenComponent implements OnInit{
 
   maps:Maps[] = [] 
-  currentImg:number = 0
+  currentMap:any
 
   
   constructor(private mapsApi: ApiService){}
@@ -19,28 +19,31 @@ export class MapsInfoScreenComponent implements OnInit{
     this.takeMaps()
   }
 
-  next(): void {
-    this.currentImg = (this.currentImg + 1) % this.maps.length;
-  }
+  // next(): void {
+  //   this.currentImg = (this.currentImg + 1) % this.maps.length;
+  // }
 
-  prev(): void {
-    this.currentImg = (this.currentImg - 1 + this.maps.length) % this.maps.length;
-    if (this.currentImg < 0) {
-      this.currentImg = this.maps.length - 1;
-    }
-  }
+  // prev(): void {
+  //   this.currentImg = (this.currentImg - 1 + this.maps.length) % this.maps.length;
+  //   if (this.currentImg < 0) {
+  //     this.currentImg = this.maps.length - 1;
+  //   }
+  // }
 
   takeMaps() {
     this.mapsApi.getMaps().
     subscribe((response:any) => {
       response.data.forEach((item:any) => {
+        if(item.narrativeDescription != null) {
           this.maps.push(item)
+        }
+        this.currentMap = response.data[0]
       });
-      console.log(this.maps);
     }) 
   }
 
-  setCurrentMap(current: number) {
-    this.currentImg = current
+  setCurrentMap(current:any) {
+    this.currentMap = this.maps[current]
+    
   }
 }

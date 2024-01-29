@@ -1,23 +1,53 @@
-.container {
-  min-height: 100vh;
+// .container {
+//   min-height: 100vh;
+// }
+
+// img {
+//   width: 100%;
+// }
+
+// p {
+//   font-size: 2.3em;
+//   color: var(--black);
+// }
+
+// h3 {
+//   color: var(--black);
+//   font-size: 2em;
+// }
+
+// .blur {
+//   backdrop-filter: blur(7px);
+//   margin-top: 8%;
+//   box-shadow: 1px 2px 20px 7px var(--black);
+// }
+
+.row {
+  margin-top: 6%;
+}
+
+.mapContainer {
+  width: 90%;
+  border: 1px solid var(--lightBlack);
 }
 
 img {
   width: 100%;
 }
 
-p {
-  font-size: 2.3em;
-  color: var(--black);
+.mapInfoContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--lightBlack);
+  padding: 35px;
 }
 
-h3 {
-  color: var(--black);
+p {
   font-size: 2em;
 }
 
-.blur {
-  backdrop-filter: blur(7px);
-  margin-top: 8%;
-  box-shadow: 1px 2px 20px 7px var(--black);
+h2 {
+  color: var(--lightRed);
 }

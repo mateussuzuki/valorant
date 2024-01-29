@@ -16,7 +16,7 @@ import { ImgAgentsInfoScreenComponent } from './components/img-agents-info-scree
 import { IconAgentsInfoScreenComponent } from './components/icon-agents-info-screen/icon-agents-info-screen.component';
 import { AbilitiesAgentsInfoScreenComponent } from './components/abilities-agents-info-screen/abilities-agents-info-screen.component';
 import { MapsInfoScreenComponent } from './components/maps-info-screen/maps-info-screen.component';
-import { MapsFullImgInfoScreenComponent } from './components/maps-full-img-info-screen/maps-full-img-info-screen.component';
+
 import { MapsInfosInfoScreenComponent } from './components/maps-infos-info-screen/maps-infos-info-screen.component';
 import { GunsInfoScreenComponent } from './components/guns-info-screen/guns-info-screen.component';
 import { SidearmsInterfaceComponent } from './components/sidearms-interface/sidearms-interface.component';
@@ -27,6 +27,7 @@ import { MeleeInterfaceComponent } from './components/melee-interface/melee-inte
 import { SniperRifleInterfaceComponent } from './components/sniper-rifle-interface/sniper-rifle-interface.component';
 import { MachineGunsInterfaceComponent } from './components/machine-guns-interface/machine-guns-interface.component';
 import { ModalInterfaceComponent } from './components/modal-interface/modal-interface.component';
+import { MapsVerticalImagesComponent } from './components/maps-vertical-images/maps-vertical-images.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +43,6 @@ import { ModalInterfaceComponent } from './components/modal-interface/modal-inte
     IconAgentsInfoScreenComponent,
     AbilitiesAgentsInfoScreenComponent,
     MapsInfoScreenComponent,
-    MapsFullImgInfoScreenComponent,
     MapsInfosInfoScreenComponent,
     GunsInfoScreenComponent,
     SidearmsInterfaceComponent,
@@ -53,6 +53,7 @@ import { ModalInterfaceComponent } from './components/modal-interface/modal-inte
     SniperRifleInterfaceComponent,
     MachineGunsInterfaceComponent,
     ModalInterfaceComponent,
+    MapsVerticalImagesComponent,
   ],
   imports: [
     BrowserModule,

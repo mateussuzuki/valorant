@@ -1,53 +1,86 @@
 
+// .fullImage {
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   max-width: 100vw;
+//   max-height: 100vh;
+//   overflow: hidden;
+//   z-index: -1 ;
+// }
+
+// .buttonUp,
+// .buttonBack {
+//   background-color: transparent;
+//   border: none;
+// }
+
+// .buttonUp {
+//   position: absolute;
+//   top: 5.5%;
+//   z-index: 1;
+// }
+
+// .buttonBack {
+//   position: absolute;
+//   bottom: 0;
+//   z-index: 1;
+// }
+
+// svg {
+//   width: 50px;
+//   height: 50px;
+// }
+
+// .buttonsCircle {
+//   position: absolute;
+//   left: 13%;
+//   top: 40%;
+//   display: flex;
+//   flex-direction: column;
+// }
+
+// .buttonsCircle button {
+//   background: var(--black);
+//   border: none;
+//   border-radius: 50%;
+//   cursor: pointer;
+//   height: 12px;
+//   width: 12px;
+//   margin-bottom: 6px;
+// }
+
+// .buttonsCircle button.current {
+//   background-color: var(--lightRed);  
+// }
+
+
 .fullImage {
-  max-width: 100vw;
-  max-height: 100vh;
+  width: 100vw;
+  height: 100vh;
   overflow: hidden;
-  z-index: -1 ;
-
+  transition: 0.5s ease-in-out;
+  position: relative;
+  backdrop-filter: blur(5px);
 }
 
-.buttonUp,
-.buttonBack {
-  background-color: transparent;
-  border: none;
-}
-
-.buttonUp {
+.fullImage::before {
+  content: '';
   position: absolute;
-  top: 5.5%;
-  z-index: 1;
-}
-
-.buttonBack {
-  position: absolute;
+  top: 0;
+  right: 0;
   bottom: 0;
-  z-index: 1;
+  left: 0;
+  backdrop-filter: blur(5px);
+  z-index: -1; 
 }
 
-svg {
-  width: 50px;
-  height: 50px;
-}
-
-.buttonsCircle {
-  position: absolute;
-  left: 13%;
-  top: 40%;
+.verticalMaps {
+  width: 12vw;
+  height: 85vh;
   display: flex;
   flex-direction: column;
-}
-
-.buttonsCircle button {
-  background: var(--black);
-  border: none;
-  border-radius: 50%;
-  cursor: pointer;
-  height: 12px;
-  width: 12px;
-  margin-bottom: 6px;
-}
-
-.buttonsCircle button.current {
-  background-color: var(--lightRed);  
+  justify-content: end;
+  margin-top: 7.5%;
+  
 }
