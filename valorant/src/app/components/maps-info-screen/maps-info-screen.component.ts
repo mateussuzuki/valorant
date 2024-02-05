@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Maps } from 'src/app/models/maps.model';
 import { ApiService } from 'src/app/services/api.service';
 
+
 @Component({
   selector: 'app-maps-info-screen',
   templateUrl: './maps-info-screen.component.html',
@@ -17,6 +18,7 @@ export class MapsInfoScreenComponent implements OnInit{
 
   ngOnInit(): void {
     this.takeMaps()
+
   }
 
   // next(): void {

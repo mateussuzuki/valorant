@@ -74,12 +74,12 @@
     [style.backgroundImage]="'url(' + currentMap.splash + ')'">
 
       <div class="row">
-        <div class="verticalMaps col-1">
-          <div *ngFor="let item of maps; index as i" class="ms-5">
+        <div class="verticalMaps col-12 col-md-1">
+          <div *ngFor="let item of maps; index as i">
             <app-maps-vertical-images [maps]="item" (click)="setCurrentMap(i)"/>
           </div>
         </div>
-        <div class="col-10">
+        <div class="col-12 col-md-10 ">
           <app-maps-infos-info-screen [maps]="currentMap" />
         </div>
       </div>

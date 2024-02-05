@@ -4,3 +4,9 @@
   bottom: 0;
   
 }
+
+@media ( max-width: 767px) {
+  .bustPortrait {
+    width: 100%;
+  }
+}

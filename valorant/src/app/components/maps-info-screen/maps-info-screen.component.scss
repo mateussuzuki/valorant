@@ -76,11 +76,33 @@
 }
 
 .verticalMaps {
-  width: 12vw;
-  height: 85vh;
+  width: 140px;
+  // height: 85vh;
   display: flex;
   flex-direction: column;
   justify-content: end;
-  margin-top: 7.5%;
-  
+  margin-top: 3%;
+  margin-left: 2%;
+  z-index: 1; 
+
+}
+
+
+@media ( max-width: 767px ) {
+  .fullImage { 
+    overflow: auto;
+  }
+
+  .verticalMaps {
+    flex-direction: row;
+    width: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .verticalMaps {
+    margin-left: 0;
+    margin-top: 15%;
+    padding: 5px;
+  }
 }
